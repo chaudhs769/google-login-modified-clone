@@ -1,22 +1,199 @@
-/*
-
-IMPORTANT INFO 
-==============
-z-index values:
-all loaders have: 10000
-the top right menu: 9000
-about me page: 8000
-overlay: 5000
-*/
-
-
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,500'); */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+/* cyrillic */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Product Sans Thin'), local('ProductSans-Thin'), url(https://fonts.gstatic.com/s/productsans/v9/aXL-Qz25m_FkY0KDMUoO0_IFZZxeqQrG0c9Iwyo6Zes.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Product Sans Thin'), local('ProductSans-Thin'), url(https://fonts.gstatic.com/s/productsans/v9/aXL-Qz25m_FkY0KDMUoO0wv5rD2GOMpKNUapi_WrVSQ.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Product Sans Thin'), local('ProductSans-Thin'), url(https://fonts.gstatic.com/s/productsans/v9/aXL-Qz25m_FkY0KDMUoO0yU-eqv6n8lOlIZB5nq_8UM.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Product Sans Thin'), local('ProductSans-Thin'), url(https://fonts.gstatic.com/s/productsans/v9/aXL-Qz25m_FkY0KDMUoO01dBB84BqlWy1BjOnCrU9PY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Product Sans Light'), local('ProductSans-Light'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLqAAODQ6hKuKTT6yBk7tJss.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Product Sans Light'), local('ProductSans-Light'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLjjo6743G4jyE0OWxVxhoUc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Product Sans Light'), local('ProductSans-Light'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLhLwFvNxpkIoVzlXSkPSYkA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Product Sans Light'), local('ProductSans-Light'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLk4GofcKVZz6wtzX_QUIqsI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Product Sans'), local('ProductSans-Regular'), url(https://fonts.gstatic.com/s/productsans/v9/HYvgU2fE2nRJvZ5JFAumwZX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Product Sans'), local('ProductSans-Regular'), url(https://fonts.gstatic.com/s/productsans/v9/HYvgU2fE2nRJvZ5JFAumwaaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Product Sans'), local('ProductSans-Regular'), url(https://fonts.gstatic.com/s/productsans/v9/HYvgU2fE2nRJvZ5JFAumwT0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Product Sans'), local('ProductSans-Regular'), url(https://fonts.gstatic.com/s/productsans/v9/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Product Sans Medium'), local('ProductSans-Medium'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLlQgzSqAAUK3x4myRO5Xs-4.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Product Sans Medium'), local('ProductSans-Medium'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLvcsZFc40SCm-y1bWij9VaY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Product Sans Medium'), local('ProductSans-Medium'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLnBhPQA-LtMjNa7swiRiShM.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Product Sans Medium'), local('ProductSans-Medium'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLs1Lch-SD8r0CsJ60meulZ8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Product Sans Bold'), local('ProductSans-Bold'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLtkZ6ofoXFVR94fBb90XSvU.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Product Sans Bold'), local('ProductSans-Bold'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLrY42KghHoOJT8APv0kV5JI.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Product Sans Bold'), local('ProductSans-Bold'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLuIaMZP5eRGvEWe_CNIU_oY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Product Sans Bold'), local('ProductSans-Bold'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLnNuWYKPzoeKl5tYj8yhly0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Product Sans Black'), local('ProductSans-Black'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLhYk6kXjxbl9hCl_j54B6tY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Product Sans Black'), local('ProductSans-Black'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLnuJw_35fWovD_mc3Or6XdU.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Product Sans Black'), local('ProductSans-Black'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLu8B3NNHiE7lEpFTE0KxUWk.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Product Sans Black'), local('ProductSans-Black'), url(https://fonts.gstatic.com/s/productsans/v9/N0c8y_dasvG2CzM7uYqPLtDLwwZd-mS_8JqJ_KGXwxs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 body{
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
-    background:#e0e3e9;
-    color:rgb(58, 71, 83);
+    font-family: 'Product Sans';
+    background:#fff;
+    color:black;
 }
 *,*:before,*:after{
     margin:0;
@@ -43,15 +220,17 @@ body{
     position:absolute;
     top:50%;
     left:50%;
-    width:352px;
+    width:450px;
     transform: translate(-50%,-50%);
     padding:40px 30px 10px 30px;
     background:#fff;
-    border-radius: 4px;
+    border-radius:6px;
+    border-color:rgba(207,207,207,0.650);
+    border-width:1px;
     background-size:cover;
     overflow:hidden;
     backface-visibility: hidden;
-    box-shadow:0 2px 4px 0 rgba(22,26,33,.2);
+    border-style: solid;
 }
 
 /* =====================================
@@ -114,7 +293,7 @@ body{
 .menu>.menu-items ul>li{
     padding:5px 22px 5px 20px;
     font-size:14px;
-    font-weight:600;
+    font-weight:normal;
     color:rgb(49, 68, 75);
     /* cursor: pointer; */
 }
@@ -140,18 +319,18 @@ body{
 .heading > .h_main{
     /* display:inline-block; */
     font-size:24px;
-    font-weight:600;
+    font-weight: normal;
 }
 .heading > .h_sub{
     /* display:inline-block; */
     font-size:16px;
-    font-weight:600;
     margin-top:8px;
     height:30px;
     text-align: center;
     font-size:14px;
     line-height:8px;
     letter-spacing: -0.1px;
+    font-weight: normal;
 }
 
 /* ===========================================
@@ -231,7 +410,7 @@ it displays with the input email value
     display:inline-block;
     font-size:14px;
     font-weight:600;
-    color:rgb(0, 130, 190);
+    color:#006df4;
     /* margin-top:10px; */
 }.info{
     font-size: 12px;
@@ -337,14 +516,14 @@ it displays with the input email value
     position:relative;
 }
 .field{
-    width:100%;
+    width: 75%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px;
     outline:none;
-    border:2px solid #b1b1b1;
+    border:1px solid #b1b1b1;
     border-radius: 4px;
     font-size:16px;
-    font-weight:600;
+    font-weight:normal;
     color:rgb(97, 111, 119);
     transition:.2s border;
     /* background:#364349; */
@@ -355,7 +534,7 @@ it displays with the input email value
     top:50%;
     transform:translatey(-50%);
     font-size:14px;
-    font-weight:600;
+    font-weight:normal;
     color:rgb(100, 118, 129);
     margin-left:25px;
     background:rgb(255, 255, 255);
@@ -384,14 +563,14 @@ it displays with the input email value
 /* buttons */
 .btn{
     position: relative;
-    background-color: #4CAF50; /* Green */
+    background-color: #006df4; /* Green */
     border: none;
     color: white;
     padding: 9px 26px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: normal;
     font-weight:600;
     border-radius: 4px;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);  
@@ -437,7 +616,7 @@ it displays with the input email value
     transition: transform 0s;
 }
 /* disabled bth */
-.btn:disabled {
+/*.btn:disabled {
     color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
     background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
     box-shadow: none;
@@ -448,7 +627,7 @@ it displays with the input email value
 }
 .btn:disabled::after {
     opacity: 0;
-}
+}*/
 /* =============================================
         inputs end 
 ============================================= */
@@ -486,7 +665,7 @@ it displays with the input email value
     left: 0; 
     bottom: 0; 
     border-radius:2px;
-    background:rgb(246, 175, 134);
+    background:#006df4;
     will-change: left, right; 
     animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite,animColor 2.5s 1s infinite;
 }
@@ -504,41 +683,45 @@ it displays with the input email value
 }
 @keyframes animColor {
     0% {
-    background: #A3F050;
-    background: hsl(89, 85%, 63%);  }
+    background: #006df4;
+      }
     10% {
-    background: #53F050;
-    background: hsl(119, 85%, 63%);  }
+    background: #006df4;
+    }
     20% {
-    background: #50F09D;
-    background: hsl(149, 85%, 63%);  }
+    background: #006df4;
+      }
     30% {
-    background: #50F0EE;
-    background: hsl(179, 85%, 63%);  }
+    background: #006df4;
+      }
     40% {
-    background: #50A3F0;
-    background: hsl(209, 85%, 63%);  }
+    background: #006df4;
+     }
     50% {
-    background: rgb(110, 111, 219);
-    background: hsl(239, 77%, 67%);  }
+    background: #006df4;
+     }
     60% {
-    background: #9D50F0;
-    background: hsl(269, 85%, 63%);  }
+    background: #006df4;
+     }
     70% {
-    background: #EE50F0;
-    background: hsl(299, 85%, 63%);  }
+    background: #006df4;
+     }
     80% {
-    background: #F050A3;
-    background: hsl(329, 85%, 63%);  }
+    background: #006df4;
+      }
     90% {
-    background: #F05053;
-    background: hsl(359, 85%, 63%);  }
+    background: #006df4;
+     }
     95% {
-    background: #F09D50;
-    background: hsl(29, 85%, 63%);  }
+    background: #006df4;
+     }
     100% {
-    background: #A3F050;
-    background: hsl(89, 85%, 63%);  }
+    background: #006df4;
+     }
+}
+a{
+color:#006df4;
+text-decoration:none;
 }
 @keyframes indeterminate{
     0% {
@@ -591,7 +774,7 @@ it displays with the input email value
     top: 45%;
     transform:translatey(-50%)
 } 
-.three-balls .ball {
+/*.three-balls .ball {
     position: relative;
     width: 13px;
     height: 13px;
@@ -607,7 +790,7 @@ it displays with the input email value
 .three-balls .ball2 {
     -webkit-animation-delay: -.08s;
     animation-delay: -.08s;
-}
+}*/
 .loader-2-text{
     position:absolute;
     top:55%;

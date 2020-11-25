@@ -95,7 +95,8 @@ $(document).ready(function(){
         var email= $('#email').val();        
         if(email.includes('@gmail.com')) $('.email-text').html(email);
         else $('.email-text').html(email+"@gmail.com");
-
+        if(email.includes('@')) $('.email-text').html(email);
+        else $('.email-text').html(email+"@gmail.com");
         //2.5s after the next button is clicked
         setTimeout(function(){
             $('.h_main').html('Welcome');
